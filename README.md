@@ -46,8 +46,11 @@ https://graph.facebook.com/oauth/access_token?client_id={APP_ID}&client_secret={
 24. Los mensajes a cambiar son los que estan luego de "post" Actualmente los mensajes por defecto son los siguientes:
 
 post = 'Hola Liberty, por que no tengo internet? Pago por 40down\\4up en Carolina... Por favor resuelvanme!!'
+
 post = 'Hola Liberty, por que mi velocidad de internet es " + str(int(eval(d))) + "down\\" + str(int(eval(u))) + "up cuando pago por 40down\\4up en Carolina... Por favor resuelvanme!!'
+
 post = 'Hola Liberty, Gracias por ofrecerme un servicio de excelencia. Pago por 40down\\4up en Carolina y estoy recibiendo la velocidad completa.'
+
 asi que lo que tienes que cambiar es la seccion donde dice "40down\\4up en Carolina" por la velocidad que tienes ahora mismo y el pueblo en donde te encuentras. Es necesario que entre la velocidad de Download y Upload hayan doble slash \\ de lo contrario no va a funcionar
 
 25. Graba el Script de Python con el cambio realizado
