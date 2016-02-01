@@ -1,6 +1,8 @@
 # LibertySpeedTestReportScript
 Script en Python que realiza un SpeedTest y notifica a Liberty Puerto Rico cuando las velocidades no son las indicadas. El script esta hecho para Liberty Puerto Rico pero usted puede adaptarlo a su proveedor de servicio de internet deseado.
 
+Site del script adaptado: http://moisescardona.me/LibertySpeedTestPythonScript.html
+
 Requisitos:
 
 -El script está hecho para Raspbian del Raspberry Pi, pero deberia funcionar con cualquier distro de linux, pero tendras que editar ciertas partes del codigo en donde se hace referencia a /home/pi/Documents, cambiando /pi/ por el nombre de usario en Linux
