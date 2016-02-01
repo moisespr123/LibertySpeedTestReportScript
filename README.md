@@ -15,6 +15,7 @@ Localizaciones por defecto:
 
 1. Speedtest-cli está localizado en el script en /home/pi/Documents/speedtest-cli.py
 2. El archivo CSV que almacena la data de las pruebas está localizado en /home/pi/Documents/ y lleva por nombre data.csv
+
 Pasos a seguir:
 
 1. Deberas crear un app en facebook accediendo a http://developers.facebook.com
@@ -43,13 +44,10 @@ https://graph.facebook.com/oauth/access_token?client_id={APP_ID}&client_secret={
 22. Ahora, abre el Script de Python, busca donde dice "face=token = 'YOUR_ID' y cambia YOUR_ID por el access_token que Facebook generó, pero tienes que dejar las comillas que tiene 'YOUR ID' en el principio y al final, de lo contrario no va a funcionar.
 23. Tambien deberás cambiar el mensaje y el criterio de evaluación en los "elif eval(d)". Actualmente el valor que está es de 30, pero lo puedes cambiar a la velocidad que quiera.
 24. Los mensajes a cambiar son los que estan luego de "post" Actualmente los mensajes por defecto son los siguientes:
-
 post = 'Hola Liberty, por que no tengo internet? Pago por 40down\\4up en Carolina... Por favor resuelvanme!!'
 post = 'Hola Liberty, por que mi velocidad de internet es " + str(int(eval(d))) + "down\\" + str(int(eval(u))) + "up cuando pago por 40down\\4up en Carolina... Por favor resuelvanme!!'
 post = 'Hola Liberty, Gracias por ofrecerme un servicio de excelencia. Pago por 40down\\4up en Carolina y estoy recibiendo la velocidad completa.'
-
 asi que lo que tienes que cambiar es la seccion donde dice "40down\\4up en Carolina" por la velocidad que tienes ahora mismo y el pueblo en donde te encuentras. Es necesario que entre la velocidad de Download y Upload hayan doble slash \\ de lo contrario no va a funcionar
-
 25. Graba el Script de Python con el cambio realizado
 26. Ahora abre un terminal en Raspbian y escribe "python NOMBRE_DEL_SCRIPT" para correrlo.
 27. Si todo sale bien el script escribira un post en la pagina de liberty.
