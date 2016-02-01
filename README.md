@@ -5,15 +5,16 @@ Site del script adaptado: http://moisescardona.me/LibertySpeedTestPythonScript.h
 
 Requisitos:
 
--El script está hecho para Raspbian del Raspberry Pi, pero deberia funcionar con cualquier distro de linux, pero tendras que editar ciertas partes del codigo en donde se hace referencia a /home/pi/Documents, cambiando /pi/ por el nombre de usario en Linux
--Python (Lo probé con el Python que trae Raspbian preinstalado)
--Speedtest-cli, lo consigues en https://github.com/sivel/speedtest-cli
--Si no tienes "requests" de python lo puedes instalar escribiendo en el terminal "pip install requests"
--Un app en Facebook para postear en la pagina de Liberty
+1. El script está hecho para Raspbian del Raspberry Pi, pero deberia funcionar con cualquier distro de linux, pero tendras que editar ciertas partes del codigo en donde se hace referencia a /home/pi/Documents, cambiando /pi/ por el nombre de usario en Linux
+2. Python (Lo probé con el Python que trae Raspbian preinstalado)
+3. Speedtest-cli, lo consigues en https://github.com/sivel/speedtest-cli
+4. Si no tienes "requests" de python lo puedes instalar escribiendo en el terminal "pip install requests"
+5. Un app en Facebook para postear en la pagina de Liberty
+
 Localizaciones por defecto:
 
--Speedtest-cli está localizado en el script en /home/pi/Documents/speedtest-cli.py
--El archivo CSV que almacena la data de las pruebas está localizado en /home/pi/Documents/ y lleva por nombre data.csv
+1. Speedtest-cli está localizado en el script en /home/pi/Documents/speedtest-cli.py
+2. El archivo CSV que almacena la data de las pruebas está localizado en /home/pi/Documents/ y lleva por nombre data.csv
 Pasos a seguir:
 
 1. Deberas crear un app en facebook accediendo a http://developers.facebook.com
@@ -49,9 +50,9 @@ post = 'Hola Liberty, Gracias por ofrecerme un servicio de excelencia. Pago por 
 
 asi que lo que tienes que cambiar es la seccion donde dice "40down\\4up en Carolina" por la velocidad que tienes ahora mismo y el pueblo en donde te encuentras. Es necesario que entre la velocidad de Download y Upload hayan doble slash \\ de lo contrario no va a funcionar
 
-23. Graba el Script de Python con el cambio realizado
-24. Ahora abre un terminal en Raspbian y escribe "python NOMBRE_DEL_SCRIPT" para correrlo.
-25. Si todo sale bien el script escribira un post en la pagina de liberty.
+25. Graba el Script de Python con el cambio realizado
+26. Ahora abre un terminal en Raspbian y escribe "python NOMBRE_DEL_SCRIPT" para correrlo.
+27. Si todo sale bien el script escribira un post en la pagina de liberty.
 
 
 El credito va para el creador de este tremendo codigo: http://pastebin.com/WMEh802V
